@@ -50,7 +50,6 @@ header .donate-link {
   background: #a40b28;
   padding: 10px 30px;
   color: white;
-  /* add align-self; flex-end; to overwrite align-items: center; from the parent container */
   border-radius: 5px;
   align-self: flex-end;
 }
@@ -68,24 +67,28 @@ header .donate-link {
 }
 
 .about-text {
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  text-align: center;
+  font-size: smaller;
 }
 
 .about-text h2,
 .about-text p {
-  width: 80%;
+  width: 100%;
 }
 
 .about-image {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-grow: ;
 }
 
 .about-image img {
+  /* object-fit: cover; */
   width: 100%;
-  margin-bottom: -6px;
+  flex-grow: ;
 }
 
 /* End Header Section */
@@ -97,10 +100,12 @@ main .content-wrapper {
   justify-content: center;
   flex-flow: row wrap;
   padding: 50px 0;
+  
 }
 
 .main-content-wrapper {
   max-width: 800px;
+  flex-grow: 1;
 }
 
 .main-content-wrapper h2 {
